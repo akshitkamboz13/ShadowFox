@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shadowfox.studentinfo.controllers.StudentController">
+    <HBox spacing="10">
+        <TextField fx:id="idField" promptText="Student ID" />
+        <TextField fx:id="nameField" promptText="Name" />
+        <TextField fx:id="ageField" promptText="Age" />
+        <TextField fx:id="classField" promptText="Class" />
+    </HBox>
+    <HBox spacing="10">
+        <Button fx:id="addButton" text="Add Student" />
+        <Button fx:id="deleteButton" text="Delete Student" />
+        <Button fx:id="updateButton" text="Update Student" />
+      <VBox.margin>
+         <Insets left="5.0" right="5.0" />
+      </VBox.margin>
+    </HBox>
+    <TableView fx:id="studentTable">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="96.80001533031464" text="ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="237.59999084472656" text="Name" />
+            <TableColumn fx:id="ageColumn" minWidth="0.0" prefWidth="103.20001220703125" text="Age" />
+            <TableColumn fx:id="classColumn" minWidth="0.0" prefWidth="192.7999267578125" text="Class" />
+        </columns>
+    </TableView>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+</VBox>
